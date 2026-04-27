@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+/*Header*/
+header{
+    background-image: url(/images/nightOcean.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+}
+
+/*Navigation Menu Styling*/
+#navOverlay{
+    background-image: url(/images/ocean.avif);
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+}
+
+
+/*Footer*/
+footer{
+    background-image: url(/images/ocean.avif);
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+}
