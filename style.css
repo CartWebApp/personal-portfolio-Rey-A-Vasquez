@@ -2,11 +2,11 @@ body{
     margin: 0;
     background-color: black;
     color: white;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", San;
 }
 /*Header*/
 header{
-    background-image: url(/images/nightOcean.jpg);
+    background-image: url(/images/index/darkOcean.png);
     background-size: cover;
     background-position: 50%;
     height: 100vh;
