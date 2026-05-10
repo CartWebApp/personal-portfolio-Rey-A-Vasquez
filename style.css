@@ -44,7 +44,36 @@ body{
     100%{z-index: -1;}
 }
 
-/*Start Up Screen*/
+/*Navigation Overlay*/
+#navOverlay{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    background-image: url(/images/index/cloudy.png);
+}
+
+#navOverlay > img{
+    width: 50%;
+    height: 50%;
+}
+
+#navOverlay ul {
+    list-style-type: none;
+}
+
+#navOverlay button{
+    background: none;
+    border: none;
+    color: var(--light-blue);
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/*Start Up Screen
 #loadScreen{
     background-color: var(--deep-blue);
     display: flex;
@@ -72,13 +101,13 @@ body{
 
 #loadScreen > div{
     position:absolute;
-    width: 90%;
-    height: 90%;
-    top: 5%;
-    right: 5%;
+    width: 90vw;
+    height: 90vh;
+    top: 5vh;
+    right: 5vw;
     border: var(--bright-blue) 15px solid;
 }
-
+*/
 
 
 /*Scroll Bar*/
@@ -169,14 +198,6 @@ main{
     margin-bottom: 100vh;
 }
 
-/*Navigation Menu Styling*/
-#navOverlay{
-    background-image: url(/images/ocean.avif);
-    background-size: cover;
-    background-position: 50%;
-    height: 100vh;
-}
-
 /*Resume*/
 #resume{
     aspect-ratio: 1 / 1.29;
@@ -187,7 +208,44 @@ main{
     display: grid;
     grid-template-rows: 16% 15% 21% 21% 15% 12%;
     grid-template-columns: 66% 30% 4%;
-    font-size: 12px;
+}
+
+#resume h2,
+#resume h3{
+    font-size: clamp(14px, 3vw, 32px);
+}
+
+#resume h4,
+#resume h2,
+#resume h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+}
+
+#resume p{
+    line-height: .9;
+}
+
+#resume h2,
+#resume h3,
+#resume h4,
+#resume h5,
+#resume p{
+    margin: 0;
+    padding-left: 4%;
+}
+
+#resume h4{
+    font-size: clamp(10px, 1.5vw, 14px);
+}
+
+#resume h5{
+    font-size: clamp(9px, 1.5vw, 13px);
+}
+
+#resume ul,
+#resume p {
+    font-size: clamp(8px, 1.5vw, 12px);
 }
 
 #resume > div {
@@ -228,8 +286,8 @@ main{
     margin: 0;
 }
 
-#resume ul{
-    padding-left: 15%;
+#resume > aside ul{
+    padding-left: 18%;
 }
 
 #resume-contact > ul{
@@ -237,9 +295,9 @@ main{
     padding-left: 0;
 }
 
-#resume-contact > ul > li:first-of-type > img{
-    width: 15px;
-    height: 15px;
+#resume-contact li > img{
+    width: clamp(8px, 1.5vw, 12px);
+    height: clamp(8px, 1.5vw, 12px);
 }
 
 /*Footer*/
