@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button id="navigation"><img src="/images/icons/nav.png" alt="Navigation menu button"></button>
+    <button id="navigation" class="openNav"><img src="/images/icons/nav.png" alt="Navigation menu button"></button>
 
     <header>
         <h1>Rey Vasquez</h1>
@@ -18,7 +18,7 @@
         <img src="/images/icons/anchor.png" alt="Scroll Down Indicator">
     </header>
     <main>
-        <button id="navigation-main"><img src="/images/icons/nav.png" alt="Navigation menu button"></button>
+        <button id="navigation-main" class="openNav"><img src="/images/icons/nav.png" alt="Navigation menu button"></button>
         <button id="scroll-up-button"><img src="/images/icons/scrollUp.png" alt="Scrolling to top arrow"></button>
         <!--Introduction-->
         <section id="welcome">
@@ -319,9 +319,10 @@
         <div></div>
     </section>
     <!--Navigation Overlay-->
-    <section id="navOverlay">
+    <section id="navOverlay" class="notActive">
         <img src="/images/navMenuIcons/navUnknown.png" alt="navigation target not selected">
-        <h2>Navagation<button><img src="/images/icons/backarrow.png" alt="Close menu button"></button></h2>
+        <h2>BACK<button id="closeNav"><img src="/images/icons/backarrow.png" alt="Close menu button"></button></h2>
+
         <nav>
             <ul>
                 <li><button>Home</button></li>
@@ -332,6 +333,9 @@
                 <li><button>Future Plans</button></li>
             </ul>
         </nav>
+        <div id="navCloud">
+            <div id="navMenuRow"></div>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
