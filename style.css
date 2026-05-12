@@ -315,6 +315,44 @@ main{
 }
 
 /*Resume*/
+#resumeSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+}
+
+#resumeSection > h2{
+    height: 5vh;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    text-align: center;
+}
+
+#resumeSection > p,
+#resumeSection > a{
+    width: 30%;
+    top: 15vh;
+    left: 3%;
+    position: relative;
+}
+
+#resumeSection > img{
+    position: relative;
+    width: 25%;
+    left: 5%;
+}
+
+#resumeSection > a{
+    text-decoration: none;
+    background-color: var(--some-blue);
+    border: 3px var(--deep-blue) solid;
+    width: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
 #resume{
     aspect-ratio: 1 / 1.29;
     width: clamp(300px, 60vw, 600px);
@@ -324,6 +362,9 @@ main{
     display: grid;
     grid-template-rows: 16% 15% 21% 21% 15% 12%;
     grid-template-columns: 66% 30% 4%;
+    position: absolute;
+    right: 10px;
+    top: 15vh;
 }
 
 #resume h2,
