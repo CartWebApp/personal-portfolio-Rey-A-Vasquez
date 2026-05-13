@@ -28,6 +28,25 @@ body{
     overflow-y: hidden;
 }
 
+.scroll-up{
+    background-color: var(--main-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white 4px;
+}
+
+.scroll-up:hover,
+.scroll-up:focus{
+    background-color: var(--deep-blue);
+    border-color: var(--light-blue);
+}
+
+.scroll-up > img{
+    width: 60%;
+    height: 60%;
+}
+
 @keyframes unveiling {
     0% {
         width: 0%;
@@ -184,12 +203,12 @@ nav a:focus{
 }
 
 #loadScreen > div{
-    position:absolute;
-    width: 90vw;
-    height: 90vh;
-    top: 5vh;
-    right: 5vw;
-    border: var(--bright-blue) 15px solid;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    right: 5%;
+    border: var(--bright-blue) 5px solid;
 }
 
 /*Scroll Bar*/
@@ -457,6 +476,16 @@ main{
     height: clamp(8px, 1.5vw, 12px);
 }
 
+/*Education graphic*/
+.edu-graphic{
+    width: 40vw;
+}
+
+/*About Me*/
+#thanks-image{
+    width: 30vw;
+}
+
 /*Footer*/
 footer{
     background-image: url(/images/index/ocean.avif);
@@ -468,3 +497,11 @@ footer{
     z-index: 10;
 }
 
+footer > div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
